@@ -4,8 +4,14 @@ node() {
   stage('init') {
     deleteDir()
     checkout scm
+    setupCommonPipelineEnvironment script: this
   }
   stage('deployIntegrationArtifact Command') {
-       integrationArtifactDeploy script: this
+     integrationArtifactDeploy script: this
+  }
+  stage('integrationArtifactGetServiceEndpoint Command') {
+    print "Service Endpoint:"
+		integrationArtifactGetServiceEndpoint script: this
+    print  commonPipelineEnvironment.getValue("integrationFlowServiceEndpoint")
   }
 }
