@@ -1,4 +1,4 @@
 steps:
   integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: roverpocServiceKeyCredential
-    integrationFlowId: flow1
+    cpiApiServiceKeyCredentialsId: apiServiceKeyCredential
+    integrationFlowId: Assignment4_HTTP_To_Mail
