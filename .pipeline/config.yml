@@ -2,3 +2,7 @@ steps:
   integrationArtifactDeploy:
     cpiApiServiceKeyCredentialsId: apiServiceKeyCredential
     integrationFlowId: Assignment4_HTTP_To_Mail
+  integrationArtifactGetServiceEndpoint:
+    cpiApiServiceKeyCredentialsId: apiServiceKeyCredential
+    integrationFlowId: Assignment4_HTTP_To_Mail-on
+
